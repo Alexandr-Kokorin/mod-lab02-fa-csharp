@@ -47,9 +47,11 @@ namespace fans
     {
         Start.Transitions['0'] = Zero;
         Start.Transitions['1'] = One;
+        Zero.Transitions['0'] = null;
         Zero.Transitions['1'] = Stop;
         One.Transitions['0'] = Stop;
         One.Transitions['1'] = One;
+        Stop.Transitions['0'] = null;
         Stop.Transitions['1'] = Stop;
     }
 
